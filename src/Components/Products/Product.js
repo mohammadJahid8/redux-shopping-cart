@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Product = () => {
+const Product = ({ product }) => {
+    const { quantity, productName, price } = product;
     return (
         <div className="bg-white md:py-4 md:px-4 py-2 px-0 shadow-md rounded-lg my-4 mx-4">
             <div className="flex justify-between px-4 items-center">
                 <div className="text-lg font-semibold">
                     <p>
-                        {/* {productName} ({productQuantity}) */} 0
+                        {productName} ({quantity})
                     </p>
 
-                    <p className="text-gray-400 text-base">
-                        Tk 0
-                        {/* {productPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} */}
+                    <p className="text-gray-400 text-base text-start">
+                        Tk {price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                     </p>
                 </div>
                 <div className="text-lg font-semibold">
