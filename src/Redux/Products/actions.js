@@ -1,9 +1,9 @@
-import { ADD_TO_CART, DECREASE_FROM_CART } from "./actionTypes";
+import { ADD_FROM_CART, DECREASE_FROM_CART } from "./actionTypes";
 
 
-export const addToCart = (id, quantity) => {
+export const addFromCart = (id, quantity) => {
     return {
-        type: ADD_TO_CART,
+        type: ADD_FROM_CART,
         payload: {
             id,
             quantity,

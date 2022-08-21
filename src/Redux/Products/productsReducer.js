@@ -1,4 +1,4 @@
-import { ADD_TO_CART, DECREASE_FROM_CART } from "./actionTypes";
+import { ADD_FROM_CART, DECREASE_FROM_CART } from "./actionTypes";
 
 const initialState = {
     products: [
@@ -26,7 +26,7 @@ const initialState = {
 const productsReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case ADD_TO_CART:
+        case ADD_FROM_CART:
 
             return {
                 ...state,
